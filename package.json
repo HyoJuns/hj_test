@@ -1,0 +1,32 @@
+{
+  "name": "hj-node-dash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "private": "true",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "build_es6": "node esbuild.config.js --target=es2017",
+    "dev": "node dist/hj_min.js",
+    "tsc": "tsc --build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/parser": "^7.18.8",
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/runtime": "^7.18.6",
+    "@chialab/esbuild-plugin-commonjs": "^0.16.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "esbuild": "^0.14.49",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "core-js": "^3.24.0",
+    "dayjs": "^1.11.3",
+    "esbuild-plugin-babel": "^0.2.3"
+  }
+}
